@@ -2,8 +2,8 @@ import random
 
 def get_numbers_ticket(min, max, quantity):
     # Перевірка вхідніх параметрів на коректність
-if not (1 <= min <= max <= 1000 and (max - min + 1) >= quantity):
-        # Вертаємо порожній список для некоректних параметрів
+    if not (1 <= min <= max <= 1000 and quantity > 0 and (max - min + 1) >= quantity):        
+    # Вертаємо порожній список для некоректних параметрів
         return []
 
     # Створюємо порожню множину для зберігання унікальних чисел
